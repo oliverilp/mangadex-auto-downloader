@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mangadex-dl:
+    image: mangadex-dl
+    container_name: mangadex-dl
+    environment:
+      - DL_INTERVAL=1
+    volumes:
+      - ./list.sh:/mangadex/list.sh
+      - ./downloads:/downloads
