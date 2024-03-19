@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  mangadex-dl:
-    image: mangadex-dl
-    container_name: mangadex-dl
+  mangadex-auto-dl:
+    image: ghcr.io/oliverilp/mangadex-auto-dl
+    container_name: mangadex-auto-dl
     environment:
       - DL_INTERVAL=1
     volumes:
